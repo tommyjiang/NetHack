@@ -288,6 +288,8 @@ static int optfn_##a(int, int, boolean, char *, char *);
 #endif
     NHOPTB(implicit_uncursed, Advanced, 0, opt_out, set_in_game,
                 On, Yes, No, No, NoAlias, &flags.implicit_uncursed)
+    NHOPTB(invweight, Advanced, 0, opt_out, set_in_game,
+                On, Yes, No, No, NoAlias, &iflags.invweight)
 #if 0   /* obsolete - pre-OSX Mac */
     NHOPTB(large_font, Advanced, 0, opt_in, set_in_config,
                 Off, Yes, No, No, NoAlias, &iflags.obsolete)
@@ -657,8 +659,8 @@ static int optfn_##a(int, int, boolean, char *, char *);
                 "windowing system to use (should be specified first)")
     NHOPTB(wizmgender, Advanced, 0, opt_in, set_wizonly,
                 Off, Yes, No, No, NoAlias, &iflags.wizmgender)
-    NHOPTB(wizweight, Advanced, 0, opt_in, set_wizonly,
-                Off, Yes, No, No, NoAlias, &iflags.wizweight)
+    /* NHOPTB(wizweight, Advanced, 0, opt_in, set_wizonly,
+                Off, Yes, No, No, NoAlias, &iflags.wizweight) */
     NHOPTB(wraptext, Advanced, 0, opt_in, set_in_game,
                 Off, Yes, No, No, NoAlias, &iflags.wc2_wraptext)
 
